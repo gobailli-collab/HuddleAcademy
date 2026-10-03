@@ -1,0 +1,37 @@
+<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1024" height="1024" fill="#9886fe" rx="240"/>
+  
+  <!-- Decorative gradient circle for depth -->
+  <defs>
+    <linearGradient id="huddle-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#eeeaff;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#5d4bc7;stop-opacity:0.2" />
+    </linearGradient>
+  </defs>
+  <circle cx="512" cy="512" r="480" fill="url(#huddle-gradient)"/>
+  
+  <!-- Main icon: Circle of people (huddle concept) -->
+  <!-- Center circle -->
+  <circle cx="512" cy="512" r="100" fill="#ffffff" opacity="0.95"/>
+  
+  <!-- Surrounding circles representing people in a huddle -->
+  <!-- Top -->
+  <circle cx="512" cy="280" r="85" fill="#ffffff" opacity="0.9"/>
+  <!-- Top-right -->
+  <circle cx="675" cy="338" r="85" fill="#ffffff" opacity="0.88"/>
+  <!-- Bottom-right -->
+  <circle cx="668" cy="530" r="85" fill="#ffffff" opacity="0.85"/>
+  <!-- Bottom-left -->
+  <circle cx="356" cy="530" r="85" fill="#ffffff" opacity="0.88"/>
+  <!-- Top-left -->
+  <circle cx="349" cy="338" r="85" fill="#ffffff" opacity="0.9"/>
+  
+  <!-- Accent highlight lines representing connection/communication -->
+  <line x1="512" y1="280" x2="512" y2="380" stroke="#5d4bc7" stroke-width="8" stroke-linecap="round" opacity="0.6"/>
+  <line x1="675" y1="338" x2="587" y2="456" stroke="#5d4bc7" stroke-width="8" stroke-linecap="round" opacity="0.5"/>
+  <line x1="356" y1="530" x2="437" y2="467" stroke="#5d4bc7" stroke-width="8" stroke-linecap="round" opacity="0.5"/>
+  
+  <!-- Optional: Small accent circle in center for visual interest -->
+  <circle cx="512" cy="512" r="50" fill="#5d4bc7" opacity="0.15"/>
+</svg>
