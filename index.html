@@ -1,396 +1,82 @@
-/* Huddle Academy: shared external stylesheet */
-:root {
-  --huddle-purple: #9886fe;
-  --huddle-purple-dark: #5d4bc7;
-  --huddle-purple-soft: #eeeaff;
-  --ink: #171717;
-  --muted: #626262;
-  --canvas: #f7f6fb;
-  --surface: #ffffff;
-  --border: #ddd9e8;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background-color: var(--canvas);
-  color: var(--ink);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.wrapper {
-  width: 92%;
-  max-width: 1120px;
-  margin: auto;
-}
-
-header {
-  padding: 16px 0;
-  background-color: var(--surface);
-}
-
-.header-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-}
-
-.brand-logo {
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-}
-
-.brand-logo img {
-  display: block;
-  width: 58px;
-  height: 58px;
-  object-fit: cover;
-  border-radius: 16px;
-  box-shadow: 0 10px 22px rgba(93, 75, 199, 0.18);
-}
-
-.tagline {
-  margin: 0;
-  color: var(--muted);
-  font-size: 15px;
-  text-align: right;
-}
-
-.tagline strong {
-  color: var(--ink);
-  font-size: 18px;
-}
-
-nav {
-  background-color: var(--huddle-purple);
-  border-bottom: 1px solid var(--huddle-purple-dark);
-}
-
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  list-style: none;
-  margin: 0;
-  padding: 10px 0;
-}
-
-nav a {
-  display: block;
-  color: #ffffff;
-  padding: 9px 14px;
-  border-radius: 999px;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-nav a:hover {
-  background-color: rgba(255,255,255,0.16);
-}
-
-nav a[aria-current="page"] {
-  background-color: #ffffff;
-  color: var(--huddle-purple-dark);
-}
-
-a {
-  color: var(--huddle-purple-dark);
-  text-underline-offset: 3px;
-}
-
-a:hover {
-  text-decoration-thickness: 2px;
-}
-
-a:focus-visible,
-input:focus-visible,
-select:focus-visible,
-textarea:focus-visible,
-button:focus-visible {
-  outline: 3px solid var(--huddle-purple-dark);
-  outline-offset: 3px;
-}
-
-main {
-  padding-top: 34px;
-  padding-bottom: 40px;
-}
-
-h1, h2, h3 {
-  line-height: 1.15;
-  color: var(--ink);
-}
-
-h1 {
-  font-size: 42px;
-  margin: 0 0 20px;
-  letter-spacing: -1px;
-}
-
-h2 {
-  font-size: 26px;
-  margin-top: 0;
-}
-
-h3 {
-  font-size: 20px;
-}
-
-p {
-  margin-top: 0;
-}
-
-.hero {
-  position: relative;
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 30px;
-  align-items: center;
-  background: linear-gradient(135deg, #ffffff 0%, var(--huddle-purple-soft) 100%);
-  padding: 36px;
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  box-shadow: 0 12px 32px rgba(52, 39, 117, 0.08);
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0 auto 0 0;
-  width: 8px;
-  background-color: var(--huddle-purple);
-}
-
-.hero img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.eyebrow {
-  display: inline-block;
-  margin-bottom: 10px;
-  padding: 5px 10px;
-  border-radius: 999px;
-  background-color: var(--huddle-purple-soft);
-  color: var(--huddle-purple-dark);
-  font-size: 13px;
-  font-weight: bold;
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
-}
-
-.button {
-  display: inline-block;
-  background-color: var(--huddle-purple-dark);
-  color: #ffffff;
-  border: 2px solid var(--huddle-purple-dark);
-  border-radius: 999px;
-  padding: 10px 20px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.button:hover {
-  background-color: #ffffff;
-  color: var(--huddle-purple-dark);
-}
-
-.content-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 24px;
-  margin-top: 24px;
-}
-
-.panel {
-  background-color: var(--surface);
-  border: 1px solid var(--border);
-  padding: 24px;
-  border-radius: 14px;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin-top: 20px;
-}
-
-.card {
-  background-color: var(--surface);
-  border: 1px solid var(--border);
-  border-top: 6px solid var(--huddle-purple);
-  padding: 20px;
-  border-radius: 12px;
-}
-
-.card:nth-child(2) {
-  border-top-color: #6e5bd9;
-}
-
-.card:nth-child(3) {
-  border-top-color: #c0b5ff;
-}
-
-.card h3 {
-  margin-top: 0;
-}
-
-.section {
-  margin-top: 30px;
-}
-
-.steps li {
-  margin-bottom: 12px;
-  padding-left: 4px;
-}
-
-.table-wrap {
-  overflow-x: auto;
-  border-radius: 12px;
-  border: 1px solid var(--border);
-}
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-  background-color: var(--surface);
-}
-
-caption {
-  text-align: left;
-  font-weight: bold;
-  padding: 14px;
-  background-color: var(--huddle-purple-soft);
-}
-
-th, td {
-  border: 1px solid var(--border);
-  padding: 14px;
-  text-align: left;
-  vertical-align: top;
-}
-
-th {
-  background-color: var(--huddle-purple-dark);
-  color: #ffffff;
-}
-
-tbody tr:nth-child(even) {
-  background-color: #faf9ff;
-}
-
-form {
-  max-width: 660px;
-}
-
-label {
-  display: block;
-  font-weight: bold;
-  margin-top: 14px;
-}
-
-input, select, textarea {
-  width: 100%;
-  padding: 11px;
-  border: 1px solid #aaa4bc;
-  border-radius: 8px;
-  font: inherit;
-  background-color: #ffffff;
-}
-
-textarea {
-  min-height: 130px;
-  resize: vertical;
-}
-
-button {
-  font: inherit;
-  cursor: pointer;
-  margin-top: 18px;
-}
-
-small {
-  display: block;
-  color: var(--muted);
-}
-
-details {
-  padding: 14px 0;
-  border-bottom: 1px solid var(--border);
-}
-
-summary {
-  cursor: pointer;
-  font-weight: bold;
-}
-
-details p {
-  margin-top: 12px;
-}
-
-footer {
-  padding: 28px 0;
-  border-top: 6px solid var(--huddle-purple);
-  background-color: var(--surface);
-}
-
-footer p {
-  margin: 4px 0;
-  font-size: 14px;
-}
-
-.skip-link {
-  position: absolute;
-  left: -9999px;
-}
-
-.skip-link:focus {
-  left: 12px;
-  top: 12px;
-  background-color: #ffffff;
-  padding: 12px;
-  z-index: 2;
-}
-
-@media (max-width: 720px) {
-  .header-row {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .tagline {
-    text-align: left;
-  }
-
-  .brand-logo img {
-    width: 50px;
-    height: 50px;
-  }
-
-  .hero, .content-grid, .cards {
-    grid-template-columns: 1fr;
-  }
-
-  h1 {
-    font-size: 34px;
-  }
-
-  .hero, .panel {
-    padding: 22px;
-  }
-
-  nav a {
-    padding: 8px 10px;
-  }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academy Home: practical onboarding and learning resources for restaurant teams using Huddle.">
+  <title>Academy Home | Huddle Academy</title>
+  <link rel="stylesheet" href="huddle.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header>
+    <div class="wrapper header-row">
+      <a class="brand-logo" href="index.html" aria-label="Huddle Academy home">
+        <img src="huddle-logo.svg" width="1024" height="1024" alt="Huddle logo">
+      </a>
+      <p class="tagline"><strong>Huddle</strong><br>Academy</p>
+    </div>
+  </header>
+  <nav aria-label="Main navigation">
+    <div class="wrapper">
+      <ul>
+        <li><a href="index.html" aria-current="page">Academy Home</a></li>
+        <li><a href="getting-started.html">Getting Started</a></li>
+        <li><a href="training.html">Training and Guides</a></li>
+        <li><a href="support.html">FAQs and Support</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main id="main" class="wrapper">
+    <section class="hero" aria-labelledby="welcome">
+      <div>
+        <p class="eyebrow">Start with one useful skill</p>
+        <h1 id="welcome">Learn. Practice.<br>Grow Together.</h1>
+        <p>Find your starting point with Huddle, prepare for your next shift, and build confidence with simple, practical training.</p>
+        <p><a class="button" href="getting-started.html">Get started</a></p>
+      </div>
+      <img src="learning-path.svg" width="600" height="320" alt="Learning path: learn the task and its purpose, practice with your trainer, then review and ask questions.">
+    </section>
+    <div class="content-grid">
+      <section class="panel">
+        <h2>Welcome to Huddle Academy</h2>
+        <p>This academy brings onboarding, role-based guidance, and common questions into one place. Start with the basics, then choose the right resource for your role.</p>
+      </section>
+      <aside class="panel">
+        <h2>Before your first shift</h2>
+        <ol class="steps">
+          <li>Confirm how your manager wants you to access Huddle.</li>
+          <li>Identify your role and first assigned task.</li>
+          <li>Ask your trainer or manager one question to bring to practice.</li>
+        </ol>
+      </aside>
+    </div>
+    <section class="section" aria-labelledby="paths">
+      <h2 id="paths">Choose your learning path</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Team members</h3>
+          <p>Prepare for onboarding and practice a task with clear expectations.</p>
+          <a href="training.html#team-members">Team member guide</a>
+        </article>
+        <article class="card">
+          <h3>Trainers</h3>
+          <p>Model the work, support practice, and give specific feedback.</p>
+          <a href="training.html#trainers">Trainer guide</a>
+        </article>
+        <article class="card">
+          <h3>Managers</h3>
+          <p>Clarify responsibilities and keep your team's learning resources consistent.</p>
+          <a href="training.html#managers">Manager guide</a>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrapper">
+      <p><a href="index.html">Home</a> · <a href="support.html">Support</a> · <a href="https://huddleapp.com">Visit Huddle</a></p>
+      <p>Huddle Academy · CIS300 student project</p>
+    </div>
+  </footer>
+</body>
+</html>
