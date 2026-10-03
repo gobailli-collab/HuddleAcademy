@@ -3,25 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Training and Guides: practical onboarding and learning resources for restaurant teams using Huddle.">
-  <title>Training and Guides | Huddle Academy</title>
+  <meta name="description" content="FAQs and Support: practical onboarding and learning resources for restaurant teams using Huddle.">
+  <title>FAQs and Support | Huddle Academy</title>
   <link rel="stylesheet" href="huddle.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
-  <header><div class="wrapper header-row"><a class="brand-logo" href="index.html" aria-label="Huddle Academy home"><img src="huddle-logo.png" width="1024" height="1024" alt="Huddle logo"></a><p class="tagline"><strong>Huddle Academy</strong><br>Learning and support for restaurant teams</p></div></header>
-  <nav aria-label="Main navigation"><div class="wrapper"><ul><li><a href="index.html">Academy Home</a></li><li><a href="getting-started.html">Getting Started</a></li><li><a href="training.html" aria-current="page">Training and Guides</a></li><li><a href="support.html">FAQs and Support</a></li></ul></div></nav>
+  <header>
+    <div class="wrapper header-row">
+      <a class="brand-logo" href="index.html" aria-label="Huddle Academy home">
+        <img src="huddle-logo.svg" width="1024" height="1024" alt="Huddle logo">
+      </a>
+      <p class="tagline"><strong>Huddle</strong><br>Academy</p>
+    </div>
+  </header>
+  <nav aria-label="Main navigation">
+    <div class="wrapper">
+      <ul>
+        <li><a href="index.html">Academy Home</a></li>
+        <li><a href="getting-started.html">Getting Started</a></li>
+        <li><a href="training.html">Training and Guides</a></li>
+        <li><a href="support.html" aria-current="page">FAQs and Support</a></li>
+      </ul>
+    </div>
+  </nav>
   <main id="main" class="wrapper">
-    <h1>Training and guides</h1><p>Choose the starting resource for your role, then practice with your restaurant's trainer. These guides support learning conversations and should be used with your restaurant's approved procedures.</p>
-    <div class="table-wrap"><table><caption>Recommended resources by role</caption><thead><tr><th scope="col">User Role</th><th scope="col">Recommended Resource</th><th scope="col">Expected Outcome</th></tr></thead><tbody>
-      <tr><th scope="row">Team member</th><td>Getting Started and first-task practice</td><td>Know where to begin, what is expected, and who can help.</td></tr>
-      <tr><th scope="row">Trainer</th><td>Demonstration and feedback guide</td><td>Demonstrate a task and coach a supported practice attempt.</td></tr>
-      <tr><th scope="row">Manager</th><td>Team learning review</td><td>Clarify ownership and identify learning gaps for follow-up.</td></tr>
-    </tbody></table></div>
-    <section id="team-members" class="panel section"><h2>Team members: practice with a purpose</h2><p>Ask your trainer to explain the task and show a successful example. Repeat the steps in your own words, then try the task with support. Before finishing, compare your work with the expected result.</p></section>
-    <section id="trainers" class="panel section"><h2>Trainers: model, assist, watch, leave</h2><p>Model the task while explaining key decisions. Assist the learner during practice. Watch a complete attempt and give feedback tied to an observable action. Step back when the learner can perform the task consistently, while remaining available for questions.</p></section>
-    <section id="managers" class="panel section"><h2>Managers: make the next step clear</h2><p>Assign a trainer and a specific learning objective. Confirm the resource matches your current procedure. Review the learner's demonstration and decide whether more practice or a new task is appropriate.</p></section>
+    <h1>FAQs and support</h1>
+    <p>Start with these common questions. For restaurant-specific access and procedures, contact your manager or designated trainer.</p>
+    <section class="panel">
+      <h2>Common questions</h2>
+      <details>
+        <summary>Where should I begin?</summary>
+        <p>Read Getting Started, confirm your role with your manager, and choose one task to practice with your trainer.</p>
+      </details>
+      <details>
+        <summary>What if I get stuck?</summary>
+        <p>Bring the exact step or action you were trying to complete. A specific question leads to a more helpful answer.</p>
+      </details>
+    </section>
+    <section class="panel section">
+      <h2>Support request</h2>
+      <p id="form-note">Course demonstration only: this form does not send or store requests. For actual help, contact your manager. Do not enter sensitive information.</p>
+      <form action="#" method="get" aria-describedby="form-note">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <label for="role">Your role</label>
+        <select id="role" name="role" required>
+          <option value="">Select your role</option>
+          <option>Team member</option>
+          <option>Trainer</option>
+          <option>Manager</option>
+        </select>
+        <label for="topic">Help topic</label>
+        <select id="topic" name="topic" required>
+          <option value="">Select a topic</option>
+          <option>Getting started</option>
+          <option>Training resource</option>
+          <option>Access issue</option>
+        </select>
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text" required>
+        <label for="message">Question or issue</label>
+        <textarea id="message" name="message" required></textarea>
+        <button class="button" type="submit">Submit demo form</button>
+      </form>
+    </section>
   </main>
-  <footer><div class="wrapper"><p><a href="index.html">Home</a> · <a href="support.html">Support</a> · <a href="https://huddleapp.com">Visit Huddle</a></p><p>Huddle Academy · CIS300 student prototype by Gabriel O. Baillie · 2026</p><p>Course project contact: <a href="mailto:bgailie@asu.edu">bgailie@asu.edu</a></p></div></footer>
+  <footer>
+    <div class="wrapper">
+      <p><a href="index.html">Home</a> · <a href="support.html">Support</a> · <a href="https://huddleapp.com">Visit Huddle</a></p>
+      <p>Huddle Academy · CIS300 student project</p>
+    </div>
+  </footer>
 </body>
 </html>
