@@ -1,36 +1,27 @@
-<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Huddle logo">
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Huddle community logo">
   <defs>
-    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0%" stop-color="#B3A9F2"/>
-      <stop offset="100%" stop-color="#9B8EEB"/>
-    </linearGradient>
+    <mask id="community-cut">
+      <rect width="1024" height="1024" fill="white"/>
+      <circle cx="476" cy="482" r="168" fill="black"/>
+      <circle cx="556" cy="482" r="168" fill="black"/>
+      <circle cx="520" cy="660" r="126" fill="black"/>
+      <circle cx="520" cy="520" r="78" fill="black"/>
+    </mask>
   </defs>
 
-  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <rect width="1024" height="1024" fill="#A8A0ED"/>
 
-  <g fill="#FFFFFF">
-    <!-- top-left head and upper arc -->
-    <circle cx="382" cy="286" r="113"/>
-    <circle cx="458" cy="470" r="171"/>
-    <circle cx="335" cy="564" r="135"/>
-
-    <!-- top-right head and upper arc -->
-    <circle cx="640" cy="286" r="113"/>
-    <circle cx="566" cy="470" r="171"/>
-    <circle cx="690" cy="564" r="135"/>
-
-    <!-- bottom arc -->
-    <circle cx="512" cy="706" r="112"/>
-    <circle cx="512" cy="676" r="169"/>
+  <g mask="url(#community-cut)">
+    <circle cx="332" cy="292" r="88" fill="#FFFFFF"/>
+    <circle cx="502" cy="458" r="180" fill="#FFFFFF"/>
+    <circle cx="692" cy="292" r="88" fill="#FFFFFF"/>
+    <circle cx="744" cy="612" r="88" fill="#FFFFFF"/>
+    <circle cx="516" cy="720" r="146" fill="#FFFFFF"/>
+    <circle cx="282" cy="612" r="88" fill="#FFFFFF"/>
   </g>
 
-  <!-- cut-outs to create the crescent / segmented community look from the reference -->
-  <g fill="#B3A9F2">
-    <circle cx="454" cy="448" r="98"/>
-    <circle cx="570" cy="448" r="98"/>
-    <circle cx="512" cy="664" r="96"/>
-    <circle cx="381" cy="570" r="82"/>
-    <circle cx="642" cy="570" r="82"/>
-    <circle cx="512" cy="579" r="82"/>
-  </g>
+  <circle cx="332" cy="292" r="26" fill="#A8A0ED" opacity="0.15"/>
+  <circle cx="692" cy="292" r="26" fill="#A8A0ED" opacity="0.15"/>
+  <circle cx="744" cy="612" r="26" fill="#A8A0ED" opacity="0.15"/>
+  <circle cx="282" cy="612" r="26" fill="#A8A0ED" opacity="0.15"/>
 </svg>
