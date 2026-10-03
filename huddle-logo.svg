@@ -1,27 +1,37 @@
 <svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Huddle community logo">
   <defs>
-    <mask id="community-cut">
+    <mask id="cut-left">
       <rect width="1024" height="1024" fill="white"/>
-      <circle cx="476" cy="482" r="168" fill="black"/>
-      <circle cx="556" cy="482" r="168" fill="black"/>
-      <circle cx="520" cy="660" r="126" fill="black"/>
-      <circle cx="520" cy="520" r="78" fill="black"/>
+      <circle cx="580" cy="470" r="158" fill="black"/>
+    </mask>
+    <mask id="cut-right">
+      <rect width="1024" height="1024" fill="white"/>
+      <circle cx="442" cy="470" r="158" fill="black"/>
+    </mask>
+    <mask id="cut-bottom">
+      <rect width="1024" height="1024" fill="white"/>
+      <circle cx="510" cy="618" r="145" fill="black"/>
     </mask>
   </defs>
 
-  <rect width="1024" height="1024" fill="#A8A0ED"/>
+  <rect width="1024" height="1024" fill="#B1A4F0"/>
 
-  <g mask="url(#community-cut)">
-    <circle cx="332" cy="292" r="88" fill="#FFFFFF"/>
-    <circle cx="502" cy="458" r="180" fill="#FFFFFF"/>
-    <circle cx="692" cy="292" r="88" fill="#FFFFFF"/>
-    <circle cx="744" cy="612" r="88" fill="#FFFFFF"/>
-    <circle cx="516" cy="720" r="146" fill="#FFFFFF"/>
-    <circle cx="282" cy="612" r="88" fill="#FFFFFF"/>
+  <g fill="#FFFFFF">
+    <circle cx="336" cy="290" r="92"/>
+
+    <g mask="url(#cut-left)">
+      <circle cx="472" cy="466" r="182"/>
+    </g>
+
+    <g mask="url(#cut-right)">
+      <circle cx="564" cy="466" r="182"/>
+    </g>
+
+    <g mask="url(#cut-bottom)">
+      <circle cx="510" cy="650" r="155"/>
+    </g>
+
+    <circle cx="728" cy="570" r="85"/>
+    <circle cx="290" cy="620" r="85"/>
   </g>
-
-  <circle cx="332" cy="292" r="26" fill="#A8A0ED" opacity="0.15"/>
-  <circle cx="692" cy="292" r="26" fill="#A8A0ED" opacity="0.15"/>
-  <circle cx="744" cy="612" r="26" fill="#A8A0ED" opacity="0.15"/>
-  <circle cx="282" cy="612" r="26" fill="#A8A0ED" opacity="0.15"/>
 </svg>
