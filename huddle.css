@@ -49,10 +49,11 @@ header {
 
 .brand-logo img {
   display: block;
-  width: 76px;
-  height: 76px;
+  width: 58px;
+  height: 58px;
   object-fit: cover;
-  border-radius: 18px;
+  border-radius: 16px;
+  box-shadow: 0 10px 22px rgba(93, 75, 199, 0.2);
 }
 
 .tagline {
@@ -68,7 +69,7 @@ header {
 }
 
 nav {
-  background-color: var(--huddle-purple);
+  background: linear-gradient(90deg, #9f8dff 0%, #8d7bf4 100%);
   border-bottom: 1px solid var(--huddle-purple-dark);
 }
 
@@ -373,8 +374,8 @@ footer p {
   }
 
   .brand-logo img {
-    width: 64px;
-    height: 64px;
+    width: 50px;
+    height: 50px;
   }
 
   .hero, .content-grid, .cards {
