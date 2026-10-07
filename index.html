@@ -3,13 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Huddle Academy home: onboarding resources, training paths, and team support for restaurant staff.">
-  <meta property="og:title" content="Huddle Academy">
-  <meta property="og:description" content="Onboarding, practice, and support for restaurant teams using Huddle.">
-  <meta property="og:type" content="website">
+  <meta name="description" content="Huddle Academy provides practical onboarding, training, and support resources for restaurant team members, trainers, and managers.">
+  <meta name="keywords" content="Huddle Academy, restaurant training, onboarding, team development, restaurant operations">
+  <meta name="author" content="Gabriel O. Baillie">
   <title>Academy Home | Huddle Academy</title>
-  <link rel="icon" href="huddle-logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="huddle.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -21,18 +26,17 @@
       <p class="tagline"><strong>Huddle</strong><br>Academy</p>
     </div>
   </header>
-
   <nav aria-label="Main navigation">
     <div class="wrapper">
       <ul>
         <li><a href="index.html" aria-current="page">Academy Home</a></li>
         <li><a href="getting-started.html">Getting Started</a></li>
         <li><a href="training.html">Training and Guides</a></li>
+        <li><a href="practice.html">Practice Checklist</a></li>
         <li><a href="support.html">FAQs and Support</a></li>
       </ul>
     </div>
   </nav>
-
   <main id="main" class="wrapper">
     <section class="hero" aria-labelledby="welcome">
       <div>
@@ -43,11 +47,10 @@
       </div>
       <img src="learning-path.svg" width="600" height="320" alt="Learning path: learn the task and its purpose, practice with your trainer, then review and ask questions.">
     </section>
-
     <div class="content-grid">
       <section class="panel">
         <h2>Welcome to Huddle Academy</h2>
-        <p>This academy brings onboarding, role-based guidance, and common questions into one place. Start with the basics, then choose the right resource for your role.</p>
+        <p>This academy brings onboarding, role-based guidance, practice, and common questions into one place. Start with the basics, then choose the resource that best matches your role and responsibility.</p>
       </section>
       <aside class="panel">
         <h2>Before your first shift</h2>
@@ -58,7 +61,6 @@
         </ol>
       </aside>
     </div>
-
     <section class="section" aria-labelledby="paths">
       <h2 id="paths">Choose your learning path</h2>
       <div class="cards">
@@ -79,26 +81,7 @@
         </article>
       </div>
     </section>
-
-    <section class="section panel" aria-labelledby="key-steps">
-      <h2 id="key-steps">What good training looks like</h2>
-      <div class="mini-grid">
-        <div>
-          <h3>Learn the task</h3>
-          <p>Understand what the task is for, why it matters, and what success looks like.</p>
-        </div>
-        <div>
-          <h3>Practice the steps</h3>
-          <p>Use repetition and feedback to build confidence before the team works independently.</p>
-        </div>
-        <div>
-          <h3>Review and improve</h3>
-          <p>Ask questions, capture quick wins, and adjust the process for your restaurant's workflow.</p>
-        </div>
-      </div>
-    </section>
   </main>
-
   <footer>
     <div class="wrapper">
       <p><a href="index.html">Home</a> · <a href="support.html">Support</a> · <a href="https://huddleapp.com">Visit Huddle</a></p>

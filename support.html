@@ -3,13 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="FAQs and support for Huddle Academy users, including onboarding help and access questions.">
-  <meta property="og:title" content="FAQs and Support | Huddle Academy">
-  <meta property="og:description" content="Common onboarding questions, role guidance, and support resources for Huddle Academy.">
-  <meta property="og:type" content="website">
+  <meta name="description" content="FAQs and Support answers common Huddle Academy questions and provides a course demonstration support form.">
+  <meta name="keywords" content="Huddle support, Huddle FAQ, restaurant training help, onboarding questions, support form">
+  <meta name="author" content="Gabriel O. Baillie">
   <title>FAQs and Support | Huddle Academy</title>
-  <link rel="icon" href="huddle-logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="huddle.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -21,22 +26,20 @@
       <p class="tagline"><strong>Huddle</strong><br>Academy</p>
     </div>
   </header>
-
   <nav aria-label="Main navigation">
     <div class="wrapper">
       <ul>
         <li><a href="index.html">Academy Home</a></li>
         <li><a href="getting-started.html">Getting Started</a></li>
         <li><a href="training.html">Training and Guides</a></li>
+        <li><a href="practice.html">Practice Checklist</a></li>
         <li><a href="support.html" aria-current="page">FAQs and Support</a></li>
       </ul>
     </div>
   </nav>
-
   <main id="main" class="wrapper">
     <h1>FAQs and support</h1>
-    <p class="lead">Start with these common questions. For restaurant-specific access and procedures, contact your manager or designated trainer.</p>
-
+    <p>Start with these common questions. For restaurant-specific access and procedures, contact your manager or designated trainer.</p>
     <section class="panel">
       <h2>Common questions</h2>
       <details>
@@ -48,52 +51,41 @@
         <p>Bring the exact step or action you were trying to complete. A specific question leads to a more helpful answer.</p>
       </details>
       <details>
-        <summary>How should I prepare for my first shift?</summary>
-        <p>Know where to sign in, know your assigned task, and have at least one question ready to review with your trainer or manager.</p>
+        <summary>Where can I learn more about Huddle?</summary>
+        <p>Visit the <a href="https://huddleapp.com">Huddle website</a> for additional company and product information.</p>
       </details>
-      <details>
-        <summary>What if I am not sure which role applies to me?</summary>
-        <p>Ask your manager which role you are expected to complete in Huddle. Team member, trainer, and manager responsibilities are similar but not identical.</p>
-      </details>
+      <p class="section">Prefer email? <a href="mailto:cugabe@hotmail.com">Email the Huddle Academy project contact</a>.</p>
     </section>
-
     <section class="panel section">
-      <h2>Request support</h2>
-      <p id="form-note">This form opens your email app so you can send a request to the support team. For actual help, contact your manager. Do not enter sensitive information.</p>
-      <form action="mailto:academy@huddleapp.com" method="post" enctype="text/plain" aria-describedby="form-note">
+      <h2>Support request</h2>
+      <p id="form-note">Course demonstration only: this form does not send or store requests. Do not enter sensitive information.</p>
+      <form action="#" method="get" aria-describedby="form-note">
         <label for="name">Name</label>
         <input id="name" name="name" type="text" autocomplete="name" required>
-
         <label for="email">Email</label>
         <input id="email" name="email" type="email" autocomplete="email" required>
-
         <label for="role">Your role</label>
         <select id="role" name="role" required>
           <option value="">Select your role</option>
-          <option>Team member</option>
-          <option>Trainer</option>
-          <option>Manager</option>
+          <option value="team-member">Team member</option>
+          <option value="trainer">Trainer</option>
+          <option value="manager">Manager</option>
         </select>
-
         <label for="topic">Help topic</label>
         <select id="topic" name="topic" required>
           <option value="">Select a topic</option>
-          <option>Getting started</option>
-          <option>Training resource</option>
-          <option>Access issue</option>
+          <option value="getting-started">Getting started</option>
+          <option value="training-resource">Training resource</option>
+          <option value="access-issue">Access issue</option>
         </select>
-
         <label for="subject">Subject</label>
         <input id="subject" name="subject" type="text" required>
-
         <label for="message">Question or issue</label>
         <textarea id="message" name="message" required></textarea>
-
-        <button class="button" type="submit">Send support request</button>
+        <button class="button" type="submit">Submit demo form</button>
       </form>
     </section>
   </main>
-
   <footer>
     <div class="wrapper">
       <p><a href="index.html">Home</a> · <a href="support.html">Support</a> · <a href="https://huddleapp.com">Visit Huddle</a></p>
