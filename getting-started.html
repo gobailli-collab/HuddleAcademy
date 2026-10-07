@@ -8,22 +8,26 @@
   <meta name="author" content="Gabriel O. Baillie">
   <title>Getting Started | Huddle Academy</title>
   <link rel="stylesheet" href="huddle.css">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BH44QCHJ3N"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0W5133Y3XS"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-BH44QCHJ3N');
+    gtag('config', 'G-0W5133Y3XS');
   </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
   <header>
-    <div class="wrapper header-row">
-      <a class="brand-logo" href="index.html" aria-label="Huddle Academy home">
-        <img src="huddle-logo.svg" width="1024" height="1024" alt="Huddle logo">
-      </a>
-      <p class="tagline"><strong>Huddle</strong><br>Academy</p>
+    <div class="wrapper">
+      <div class="brand-lockup">
+        <a class="brand-logo" href="index.html" aria-label="Huddle Academy home">
+          <img src="huddle-logo.svg" width="1024" height="1024" alt="Huddle logo">
+        </a>
+        <div class="brand-text">
+          <p class="tagline"><strong>Huddle</strong><br>Academy</p>
+        </div>
+      </div>
     </div>
   </header>
   <nav aria-label="Main navigation">
@@ -54,6 +58,35 @@
         <p>Bring your login information, the role you are training for, and one specific question. Focused questions help trainers give clearer coaching.</p>
       </aside>
     </div>
+    <figure class="process-diagram" aria-label="Three-step onboarding process">
+      <svg viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg" role="img">
+        <defs>
+          <style>
+            .process-step { font-family: Arial, sans-serif; font-size: 14px; fill: #5d4bc7; }
+            .process-number { font-weight: bold; font-size: 18px; }
+            .process-arrow { stroke: #9886fe; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+            .process-box { fill: #eeeaff; stroke: #9886fe; stroke-width: 2; rx: 8; }
+          </style>
+          <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+            <polygon points="0 0, 10 3, 0 6" fill="#9886fe" />
+          </marker>
+        </defs>
+        <rect class="process-box" x="20" y="30" width="140" height="100" />
+        <text class="process-step process-number" x="95" y="60" text-anchor="middle">1</text>
+        <text class="process-step" x="95" y="85" text-anchor="middle">Confirm</text>
+        <text class="process-step" x="95" y="105" text-anchor="middle">Access</text>
+        <path class="process-arrow" d="M 165 80 L 205 80" />
+        <rect class="process-box" x="210" y="30" width="140" height="100" />
+        <text class="process-step process-number" x="285" y="60" text-anchor="middle">2</text>
+        <text class="process-step" x="285" y="85" text-anchor="middle">Identify</text>
+        <text class="process-step" x="285" y="105" text-anchor="middle">Your Role</text>
+        <path class="process-arrow" d="M 355 80 L 395 80" />
+        <rect class="process-box" x="400" y="30" width="140" height="100" />
+        <text class="process-step process-number" x="475" y="60" text-anchor="middle">3</text>
+        <text class="process-step" x="475" y="85" text-anchor="middle">Pick One</text>
+        <text class="process-step" x="475" y="105" text-anchor="middle">Task</text>
+      </svg>
+    </figure>
     <section class="section panel" aria-labelledby="video-heading">
       <h2 id="video-heading">A simple learning rhythm</h2>
       <p>This short video reinforces the three-step process used throughout Huddle Academy: learn the task, practice it with coaching, then review what happened and ask questions.</p>

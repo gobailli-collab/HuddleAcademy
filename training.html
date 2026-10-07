@@ -8,22 +8,26 @@
   <meta name="author" content="Gabriel O. Baillie">
   <title>Training and Guides | Huddle Academy</title>
   <link rel="stylesheet" href="huddle.css">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BH44QCHJ3N"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0W5133Y3XS"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-BH44QCHJ3N');
+    gtag('config', 'G-0W5133Y3XS');
   </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
   <header>
-    <div class="wrapper header-row">
-      <a class="brand-logo" href="index.html" aria-label="Huddle Academy home">
-        <img src="huddle-logo.svg" width="1024" height="1024" alt="Huddle logo">
-      </a>
-      <p class="tagline"><strong>Huddle</strong><br>Academy</p>
+    <div class="wrapper">
+      <div class="brand-lockup">
+        <a class="brand-logo" href="index.html" aria-label="Huddle Academy home">
+          <img src="huddle-logo.svg" width="1024" height="1024" alt="Huddle logo">
+        </a>
+        <div class="brand-text">
+          <p class="tagline"><strong>Huddle</strong><br>Academy</p>
+        </div>
+      </div>
     </div>
   </header>
   <nav aria-label="Main navigation">
@@ -40,6 +44,29 @@
   <main id="main" class="wrapper">
     <h1>Training and guides</h1>
     <p>Choose the learning resource that matches your role. Each role uses the same basic rhythm, but the expected outcome changes based on the level of responsibility.</p>
+    <figure class="role-overview" aria-label="Role-based learning progression">
+      <svg viewBox="0 0 700 160" xmlns="http://www.w3.org/2000/svg" role="img">
+        <defs>
+          <style>
+            .role-text { font-family: Arial, sans-serif; font-size: 13px; fill: #5d4bc7; font-weight: bold; }
+            .role-arrow { stroke: #9886fe; stroke-width: 3; fill: none; marker-end: url(#roleArrow); }
+            .role-circle { fill: #9886fe; }
+          </style>
+          <marker id="roleArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+            <polygon points="0 0, 10 3, 0 6" fill="#9886fe" />
+          </marker>
+        </defs>
+        <circle class="role-circle" cx="80" cy="80" r="40" />
+        <text class="role-text" x="80" y="75" text-anchor="middle">Team</text>
+        <text class="role-text" x="80" y="93" text-anchor="middle">Member</text>
+        <path class="role-arrow" d="M 125 80 L 175 80" />
+        <circle class="role-circle" cx="260" cy="80" r="40" />
+        <text class="role-text" x="260" y="85" text-anchor="middle">Trainer</text>
+        <path class="role-arrow" d="M 305 80 L 355 80" />
+        <circle class="role-circle" cx="440" cy="80" r="40" />
+        <text class="role-text" x="440" y="85" text-anchor="middle">Manager</text>
+      </svg>
+    </figure>
     <section class="section" aria-labelledby="role-table-heading">
       <h2 id="role-table-heading">Role-based learning guide</h2>
       <div class="table-wrap">
